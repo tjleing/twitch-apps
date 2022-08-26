@@ -1,3 +1,3 @@
 let filenames = 
-['passion.png', 'respect_what_is_it.jpeg', 'chateau.png', 'shucka_trucka.png', 'apnea.png', 'lactase.png', 'shorts.png', 'blocked.png', 'stairs.png', 'oven.png', 'bears.png', 'father.png', 'cold_case.png']
+['passion.png', 'respect_what_is_it.jpeg', 'chateau.png', 'shucka_trucka.png', 'apnea.png', 'lactase.png', 'shorts.png', 'blocked.png', 'stairs.png', 'oven.png', 'bears.png', 'father.png', 'bigfoot.jpeg', 'cold_case.png']
 export {filenames};
