@@ -8,15 +8,15 @@ const url = new URL(window.location.href);
 // Get the search parameters from the URL
 const searchParams = new URLSearchParams(url.search);
 // Retrieve a specific query string parameter by name
-const oauth = searchParams.get('oauth');
+// const oauth = searchParams.get('oauth');
 // Print the value of the query string parameter
 
 // Twitch credentials and options
 const options = {
-  identity: {
-    username: 'ThePtrocanfers',
-    password: oauth
-  },
+  // identity: {
+  //   username: 'ThePtrocanfers',
+  //   password: oauth
+  // },
   channels: ['ThePtrocanfers']
 };
 
@@ -39,4 +39,5 @@ twitchClient.on('message', (channel, tags, message, self) => {
 
 function onNewMessage(tags, message) {
     console.log(tags, message);
+    document.getElementById("chat").innerText += `\n${tags["display-name"]}: ${message}`;
 }
