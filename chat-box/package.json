@@ -1,0 +1,8 @@
+{
+    "name": "chat-box",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "tmi.js": "^1.8.5"
+    }
+}
