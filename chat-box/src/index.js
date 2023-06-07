@@ -41,3 +41,9 @@ function onNewMessage(tags, message) {
     console.log(tags, message);
     document.getElementById("chat").innerText += `\n${tags["display-name"]}: ${message}`;
 }
+
+setTimeout(function() {
+  if(typeof(livenessCallback) != 'undefined') {
+    livenessCallback()
+  }
+}, 10000)
