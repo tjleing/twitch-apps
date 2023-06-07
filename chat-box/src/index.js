@@ -44,8 +44,8 @@ function onNewMessage(tags, message) {
 
 setTimeout(function() {
   console.log('timeout firing');
-  if(typeof(livenessCallback) != 'undefined') {
-    livenessCallback();
+  if(typeof(jsbridge) != 'undefined' && typeof(jsbridge.livenessCallback) != 'undefined') {
+    jsbridge.livenessCallback();
     console.log('callback exists');
   }
 }, 10000)
