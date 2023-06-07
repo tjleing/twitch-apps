@@ -43,7 +43,9 @@ function onNewMessage(tags, message) {
 }
 
 setTimeout(function() {
+  console.log('timeout firing');
   if(typeof(livenessCallback) != 'undefined') {
-    livenessCallback()
+    livenessCallback();
+    console.log('callback exists');
   }
 }, 10000)
