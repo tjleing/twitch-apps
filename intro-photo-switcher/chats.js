@@ -137,7 +137,77 @@ export const chats = [
     isOutgoing: true
   },
 ],
-
+[
+  // advent_date.png
+  {
+    content: "I could use a little fuel myslef",
+    isOutgoing: false
+  },
+  {
+    content: "The problem is I never remember which are the dates you eat",
+    isOutgoing: false
+  },
+  {
+    content: "shucks yum :'(",
+    isOutgoing: true
+  },
+  {
+    content: "I think the ones on the calendar, that's how advent calendars work right",
+    isOutgoing: true
+  },
+  {
+    content: "Truuuue",
+    isOutgoing: false
+  },
+  {
+    content: "That's the advant-age",
+    reactions: ['❤️'],
+    isOutgoing: false
+  },
+  {
+    content: "I got nothing to say kid, that one's a mic drop",
+    reactions: ['😮'],
+    isOutgoing: true
+  },
+  {
+    content: "Shuuuucks",
+    isOutgoing: false
+  },
+  {
+    content: "advent-ure?",
+    reactions: ['😮'],
+    isOutgoing: true
+  },
+  {
+    content: "He did it",
+    isOutgoing: false
+  },
+  {
+    content: "He one uped it",
+    isOutgoing: false
+  },
+  {
+    content: "advent-ure mom",
+    reactions: ['😢'],
+    isOutgoing: true
+  },
+  {
+    content: "got him! 📈📈📈",
+    isOutgoing: true
+  },
+  {
+    content: "just sounds like avenge your mom though",
+    isOutgoing: true
+  },
+  {
+    content: "Thanks kid",
+    isOutgoing: false
+  },
+  {
+    content: "That's real kind",
+    isOutgoing: false
+  },
+],
 ];
 
 
