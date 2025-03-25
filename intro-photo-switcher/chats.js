@@ -208,6 +208,85 @@ export const chats = [
     isOutgoing: false
   },
 ],
+[
+  // camel.png
+  {
+    content: "why isn't there a superhero called camel",
+    reactions: ['😭'],
+    isOutgoing: true
+  },
+  {
+    content: "can store lots of water",
+    isOutgoing: true
+  },
+  {
+    content: "He got it",
+    isOutgoing: false
+  },
+  {
+    content: "A great idea",
+    isOutgoing: false
+  },
+  {
+    content: "can carry a lot of straws?",
+    isOutgoing: true
+  },
+  {
+    content: "not too many though",
+    isOutgoing: true
+  },
+  {
+    content: "Can go through the eye of a needle",
+    reactions: ['😮'],
+    isOutgoing: false
+  },
+  {
+    content: "Breaks backs",
+    isOutgoing: false
+  },
+  {
+    content: "kiiid pog",
+    reactions: ['📈'],
+    isOutgoing: true
+  },
+  {
+    content: "Oh that guy? That's the camel you don't want to mess with him",
+    reactions: ['❤️'],
+    isOutgoing: false
+  },
+  {
+    content: "The guys about to crack",
+    isOutgoing: false
+  },
+  {
+    content: "He's on his last straw",
+    isOutgoing: false
+  },
+  {
+    content: "🌾",
+    isOutgoing: false
+  },
+  {
+    content: "and then he pulls out a pack of cigarettes",
+    isOutgoing: true
+  },
+  {
+    content: "Kiiiiiiiiiiid",
+    isOutgoing: false
+  },
+  {
+    content: "I love this character",
+    isOutgoing: false
+  },
+  {
+    content: "He calls those straws",
+    isOutgoing: false
+  },
+  {
+    content: "He smokes a whole pack then proceeds to break backs",
+    isOutgoing: false
+  },
+],
 ];
 
 
