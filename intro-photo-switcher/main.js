@@ -43,7 +43,7 @@ function renderMessages() {
       setTimeout(renderMessages, CHAT_TIMEOUT)
       return;
     }
-    const messageEl = createMessageElement(messages[id]);
+    const messageEl = createMessageElement(messages[id], (id === 0 || messages[id].isOutgoing !== messages[id-1].isOutgoing));
     console.log(messagesContainer)
     messagesContainer.appendChild(messageEl);
   
@@ -56,7 +56,7 @@ function renderMessages() {
 }
 
 // Function to create a message element
-function createMessageElement(message) {
+function createMessageElement(message, shouldAddHeader) {
   const messageEl = document.createElement('div');
   messageEl.className = `message ${message.isOutgoing ? 'outgoing' : ''}`;
   messageEl.dataset.id = message.id;
@@ -81,11 +81,12 @@ function createMessageElement(message) {
   contentEl.className = 'message-content';
   
   // Message header (sender)
-  // TODO: don't add header if it's the same one
-  const headerEl = document.createElement('div');
-  headerEl.className = 'message-header';
-  headerEl.textContent = name;
-  contentEl.appendChild(headerEl);
+  if (shouldAddHeader) {
+    const headerEl = document.createElement('div');
+    headerEl.className = 'message-header';
+    headerEl.textContent = name;
+    contentEl.appendChild(headerEl);
+  }
   
   // Message bubble
   const bubbleEl = document.createElement('div');
