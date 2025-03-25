@@ -127,53 +127,53 @@ function createMessageElement(message) {
     contentEl.appendChild(reactionsEl);
   }
   
-  // Add reaction button
-  const reactionBtnEl = document.createElement('button');
-  reactionBtnEl.className = 'reaction-action';
-  reactionBtnEl.textContent = 'Add reaction';
-  reactionBtnEl.addEventListener('click', function(e) {
-    e.stopPropagation();
+  // // Add reaction button
+  // const reactionBtnEl = document.createElement('button');
+  // reactionBtnEl.className = 'reaction-action';
+  // reactionBtnEl.textContent = 'Add reaction';
+  // reactionBtnEl.addEventListener('click', function(e) {
+  //   e.stopPropagation();
     
-    // Remove any existing emoji picker
-    if (activeEmojiPicker) {
-      activeEmojiPicker.remove();
-      activeEmojiPicker = null;
-    }
+  //   // Remove any existing emoji picker
+  //   if (activeEmojiPicker) {
+  //     activeEmojiPicker.remove();
+  //     activeEmojiPicker = null;
+  //   }
     
-    // Create emoji picker
-    const emojiPickerEl = document.createElement('div');
-    emojiPickerEl.className = 'emoji-picker';
+  //   // Create emoji picker
+  //   const emojiPickerEl = document.createElement('div');
+  //   emojiPickerEl.className = 'emoji-picker';
     
-    // Position the emoji picker
-    const rect = reactionBtnEl.getBoundingClientRect();
-    emojiPickerEl.style.position = 'absolute';
+  //   // Position the emoji picker
+  //   const rect = reactionBtnEl.getBoundingClientRect();
+  //   emojiPickerEl.style.position = 'absolute';
     
-    if (message.isOutgoing) {
-      emojiPickerEl.style.right = `${window.innerWidth - rect.right}px`;
-    } else {
-      emojiPickerEl.style.left = `${rect.left}px`;
-    }
+  //   if (message.isOutgoing) {
+  //     emojiPickerEl.style.right = `${window.innerWidth - rect.right}px`;
+  //   } else {
+  //     emojiPickerEl.style.left = `${rect.left}px`;
+  //   }
     
-    emojiPickerEl.style.top = `${rect.bottom}px`;
+  //   emojiPickerEl.style.top = `${rect.bottom}px`;
     
-    // Add emoji buttons
-    emojis.forEach(emoji => {
-      const emojiBtn = document.createElement('button');
-      emojiBtn.className = 'emoji-btn';
-      emojiBtn.textContent = emoji;
-      emojiBtn.addEventListener('click', function() {
-        addReaction(message.id, emoji);
-        emojiPickerEl.remove();
-        activeEmojiPicker = null;
-      });
-      emojiPickerEl.appendChild(emojiBtn);
-    });
+  //   // Add emoji buttons
+  //   emojis.forEach(emoji => {
+  //     const emojiBtn = document.createElement('button');
+  //     emojiBtn.className = 'emoji-btn';
+  //     emojiBtn.textContent = emoji;
+  //     emojiBtn.addEventListener('click', function() {
+  //       addReaction(message.id, emoji);
+  //       emojiPickerEl.remove();
+  //       activeEmojiPicker = null;
+  //     });
+  //     emojiPickerEl.appendChild(emojiBtn);
+  //   });
     
-    document.body.appendChild(emojiPickerEl);
-    activeEmojiPicker = emojiPickerEl;
-  });
+  //   document.body.appendChild(emojiPickerEl);
+  //   activeEmojiPicker = emojiPickerEl;
+  // });
   
-  contentEl.appendChild(reactionBtnEl);
+  // contentEl.appendChild(reactionBtnEl);
   
   // Append all elements to the message container
   messageEl.appendChild(avatarEl);
