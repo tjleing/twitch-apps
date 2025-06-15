@@ -1,8 +1,12 @@
 // import {filenames} from './filenames.js'
 import {chats} from './chats.js'
+// TODO:
+//   continue appending new chats?
+//   fix width
+//   disable scrollbar
 
-let MESSAGE_TIMEOUT = 2*1000;
-let CHAT_TIMEOUT = 10*1000;
+let MESSAGE_TIMEOUT = 3*1000;
+let CHAT_TIMEOUT = 7*1000;
 // let i = 0, len = filenames.length;
 // let img = document.getElementById("img");
 
